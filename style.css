@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('/ramadan\ wait.webp') no-repeat center center/cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 90px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+div {
+    display: flex;
+    gap: 20px;
+}
+
+#days, #hours, #mins, #seconds {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 80px;
+    text-align: center;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    div {
+        flex-direction: column;
+    
+    }
+    h1 {
+        margin-top: -50px;
+    }
+    .label {
+margin-bottom: -20px;
+    }
+
+}
+
+
+
