@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramadan Countdown</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramadan Countdown</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <audio autoplay>
-
-        <source src="/Ramadan_Special_Kalaam_2021,_RAMZAN_MUBARAK!,_Hammad_Hameed___Zubair_Qasmi,_Islamic_Releases(128k).m4a" type="audio/mp3">
-    </audio>
-    <h1>🌙 Countdown Till Ramadan 🕌</h1>
-    <div>
-        <div class="time-box">
-            <span class="label">📅 Days</span>
-            <div id="days">00</div>
-        </div>
-        <div class="time-box">
-            <span class="label">⏳ Hours</span>
-            <div id="hours">00</div>
-        </div>
-        <div class="time-box">
-            <span class="label">⏰ Minutes</span>
-            <div id="mins">00</div>
-        </div>
-        <div class="time-box">
-            <span class="label">⏱️ Seconds</span>
-            <div id="seconds">00</div>
-        </div>
+  <!-- Audio Element with an ID for JS reference -->
+  <audio id="myAudio" >
+    <source src="/Ramadan_Special_Kalaam_2021,_RAMZAN_MUBARAK!,_Hammad_Hameed___Zubair_Qasmi,_Islamic_Releases(128k).m4a" type="audio/mp3" />
+  </audio>
+  
+  <h1>🌙 Countdown Till Ramadan 🕌</h1>
+  <div>
+    <div class="time-box">
+      <span class="label">📅 Days</span>
+      <div id="days">00</div>
     </div>
-    <script src="app.js"></script>
+    <div class="time-box">
+      <span class="label">⏳ Hours</span>
+      <div id="hours">00</div>
+    </div>
+    <div class="time-box">
+      <span class="label">⏰ Minutes</span>
+      <div id="mins">00</div>
+    </div>
+    <div class="time-box">
+      <span class="label">⏱️ Seconds</span>
+      <div id="seconds">00</div>
+    </div>
+  </div>
+
+  <!-- Fixed Toggle Button -->
+  <button id="toggleAudio">Play Audio</button>
+
+  <script src="app.js"></script>
 </body>
 </html>

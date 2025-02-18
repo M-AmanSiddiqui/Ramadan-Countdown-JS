@@ -3,6 +3,25 @@ var hours_html = document.getElementById('hours')
 var mins_html = document.getElementById('mins')
 var seconds_html = document.getElementById('seconds')
 
+
+const audio = document.getElementById('myAudio');
+const toggleButton = document.getElementById('toggleAudio');
+
+
+toggleButton.textContent = audio.paused ? 'Play Audio' : (audio.muted ? 'Unmute Audio' : 'Mute Audio');
+
+toggleButton.addEventListener('click', () => {
+
+  if (audio.paused) {
+    audio.play();
+    toggleButton.textContent = 'Mute Audio';
+  } else {
+  
+    audio.muted = !audio.muted;
+    toggleButton.textContent = audio.muted ? 'Unmute Audio' : 'Mute Audio';
+  }
+});
+
 var now = new Date()
 var ramadan = new Date('3/01/2025')
 var diff = ramadan.getTime() - now.getTime()
