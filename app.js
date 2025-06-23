@@ -23,7 +23,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 var now = new Date()
-var ramadan = new Date('3/01/2025')
+var ramadan = new Date('2/20/2026')
 var diff = ramadan.getTime() - now.getTime()
 
 var interval = setInterval(function (){
